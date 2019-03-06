@@ -1,0 +1,12 @@
+sudo vi /etc/default/grub
+
+Note: Nhap password neu duoc yeu cau
+
+GRUB_CMDLINE_LINUX_DEFAULT="text"
+GRUB_TERMINAL=console
+
+sudo update-grub
+sudo systemctl set-default multi-user.target
+
+Undoing Text-Mode
+sudo systemctl set-default graphical.target 
